@@ -9,7 +9,7 @@ export default ($mdThemingProvider) => {
   // Configure angular-material theme
   $mdThemingProvider
     .theme('default')
-    .primaryPalette('blue-grey')
-    .accentPalette('blue')
+    .primaryPalette('red')
+    .accentPalette('green')
   ;
 };
