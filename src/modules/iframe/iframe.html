@@ -1,0 +1,17 @@
+<md-content class="md-padding no-padding-top" flex>
+  <div flex="50">
+    <h3 class="md-title">IFrame generointi</h3>
+
+    <form name="tagForm" novalidate="novalidate" autocomplete="off" layout="column">
+      <md-input-container>
+        <label>Anna / pastea URL tähän</label>
+        <textarea name="url" ng-model="vm.url" type="url" required placeholder="Anna / pastea URL tähän" rows="5" md-select-on-focus></textarea>
+      </md-input-container>
+
+      <md-input-container>
+        <label>Generoitu IFrame tag</label>
+        <textarea rows="5" md-select-on-focus placeholder="Syötä / pastea url ylläolevaan kenttään"><iframe src='{{vm.url}}&action=embedview&wdAr=1.7777777777777777' width='1186px' height='691px' frameborder='0'>Tämä on liitetty <a target='_blank' href='https://office.com'>Microsoft Office</a> esitys, jonka tarjoaa <a target='_blank' href='https://office.com/webapps'>Office Online</a>.</iframe></textarea>
+      </md-input-container>
+    </form>
+  </div>
+</md-content>
